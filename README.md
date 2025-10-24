@@ -18,6 +18,7 @@ Multiprocessing (Para processos)
 Array (Buffer compartilhado)
 
 🚀 Funcionalidades
+
 ✅ Tabuleiro de xadrez visual com peças Unicode
 
 ✅ Simulação paralela com Threads e Processos
@@ -102,6 +103,7 @@ Operações: Pesadas com overhead
 
 📈 Resultados Esperados
 Threads São Mais Rápidas Porque:
+
 ✅ Compartilham memória diretamente
 
 ✅ Operações leves e eficientes
@@ -111,6 +113,7 @@ Threads São Mais Rápidas Porque:
 ✅ Ideal para tarefas de E/S e simples
 
 Processos São Mais Lentos Porque:
+
 ❌ Precisam copiar o buffer a cada jogada
 
 ❌ Overhead de comunicação entre processos
@@ -120,13 +123,16 @@ Processos São Mais Lentos Porque:
 🎨 Representação das Peças
 O tabuleiro usa caracteres Unicode para representar as peças:
 
-Peça	Branca	Preta
-Rei	♔	♚
-Rainha	♕	♛
-Torre	♖	♜
-Bispo	♗	♝
-Cavalo	♘	♞
-Peão	♙	♟
+|------|--------|-------|
+| Peça | Branca	| Preta |
+|------|--------|-------|
+| Rei  |   ♔   |   ♚  | 
+|Rainha|   ♕   |   ♛  |
+|Torre |   ♖   |   ♜  |
+|Bispo |   ♗   |   ♝  |
+|Cavalo|   ♘   |   ♞  |
+| Peão |   ♙   |   ♟  |
+|------|--------|------|
 
 🔄 Fluxo de Execução
 Inicialização do tabuleiro
