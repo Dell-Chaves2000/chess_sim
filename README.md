@@ -79,11 +79,13 @@ pip install nome_do_pacote
 
 Estrutura do Projeto com venv:
 
+```
 CHESS_SIM/
 ├── venv/                   # Ambiente virtual (não versionado)
 ├── chess_sim.py           # Arquivo principal
 ├── requirements.txt       # Dependências (se houver)
 └── README.md             # Este arquivo
+```
 
 🚀 Como Executar
 
