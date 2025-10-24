@@ -1,4 +1,5 @@
 Simulação de Xadrez: Threads vs Processos
+
 📋 Descrição do Projeto
 Este projeto é uma aplicação gráfica em Python que demonstra a diferença de desempenho entre Threads e Processos através de uma simulação de movimentos aleatórios em um tabuleiro de xadrez. A aplicação permite comparar o tempo de execução de ambas as abordagens sob diferentes configurações.
 
