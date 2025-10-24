@@ -17,6 +17,80 @@ Multiprocessing (Para processos)
 
 Array (Buffer compartilhado)
 
+🔧 Configuração do Ambiente Virtual (venv)
+ 
+Criar e Ativar o Virtual EnvironmentWindows (PowerShell):
+
+# Criar o ambiente virtual
+
+python -m venv venv
+
+# Ativar o ambiente virtual
+
+.\venv\Scripts\activate
+
+# Verificar se está ativo (deve mostrar o prefixo (venv))
+
+(venv) PS C:\caminho\do\projeto>
+
+Windows (Command Prompt):
+
+# Criar o ambiente virtual
+
+python -m venv venv
+
+# Ativar o ambiente virtual
+
+venv\Scripts\activate
+
+# Verificar se está ativo (deve mostrar o prefixo (venv))
+
+(venv) C:\caminho\do\projeto>
+
+Linux/macOS:
+
+# Criar o ambiente virtual
+
+python3 -m venv venv
+
+# Ativar o ambiente virtual
+
+source venv/bin/activate
+
+# Verificar se está ativo (deve mostrar o prefixo (venv))
+
+(venv) user@host:~/caminho/do/projeto$
+
+Desativar o Ambiente Virtual:
+
+deactivate
+
+Instalação de Dependências
+
+Este projeto não requer dependências externas, pois usa apenas bibliotecas padrão do Python. Porém, se futuramente forem adicionadas dependências, você pode instalá-las com:
+
+# Com o venv ativado, instalar dependências
+
+pip install -r requirements.txt
+
+# Ou instalar pacotes individualmente
+
+pip install nome_do_pacote
+
+Estrutura do Projeto com venv:
+
+CHESS_SIM/
+├── venv/                   # Ambiente virtual (não versionado)
+├── chess_sim.py           # Arquivo principal
+├── requirements.txt       # Dependências (se houver)
+└── README.md             # Este arquivo
+
+🚀 Como Executar
+
+Com o venv ativado:
+
+python chess_sim.py
+
 🚀 Funcionalidades
 
 ✅ Tabuleiro de xadrez visual com peças Unicode
@@ -30,17 +104,6 @@ Array (Buffer compartilhado)
 ✅ Comparação de desempenho com resumo detalhado
 
 ✅ Buffer de complexidade fixo (90.000 elementos)
-
-⚙️ Como Executar
-Pré-requisitos
-Python 3.6 ou superior
-
-Nenhuma dependência externa necessária
-
-Execução
-bash
-
-python chess_sim.py
 
 🎮 Como Usar
 Configure os parâmetros:
@@ -123,7 +186,6 @@ Processos São Mais Lentos Porque:
 🎨 Representação das Peças
 O tabuleiro usa caracteres Unicode para representar as peças:
 
-|------|--------|-------|
 | Peça | Branca	| Preta |
 |------|--------|-------|
 | Rei  |   ♔   |   ♚  | 
@@ -132,7 +194,6 @@ O tabuleiro usa caracteres Unicode para representar as peças:
 |Bispo |   ♗   |   ♝  |
 |Cavalo|   ♘   |   ♞  |
 | Peão |   ♙   |   ♟  |
-|------|--------|------|
 
 🔄 Fluxo de Execução
 Inicialização do tabuleiro
