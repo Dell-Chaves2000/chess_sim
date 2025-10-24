@@ -38,7 +38,9 @@ Nenhuma dependência externa necessária
 
 Execução
 bash
+
 python chess_sim.py
+
 🎮 Como Usar
 Configure os parâmetros:
 
@@ -125,6 +127,7 @@ Torre	♖	♜
 Bispo	♗	♝
 Cavalo	♘	♞
 Peão	♙	♟
+
 🔄 Fluxo de Execução
 Inicialização do tabuleiro
 
